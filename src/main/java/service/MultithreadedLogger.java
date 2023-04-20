@@ -46,8 +46,8 @@ public class MultithreadedLogger  {
       Producer producer = new Producer(messages);
       executorService.submit(producer);
       producers.add(producer);
-      Thread newProducer = new Thread(producer);
-      newProducer.start();
+      //Thread newProducer = new Thread(producer);
+      //newProducer.start();
     }
 
   }
